@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +10,109 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fcfcfc; /* Very subtle off-white background */
-            color: #334155; /* Slightly darker text for better contrast */
+            background-color: #fcfcfc;
+            /* Very subtle off-white background */
+            color: #334155;
+            /* Slightly darker text for better contrast */
         }
+
         .container {
-            max-width: 1280px; /* Slightly wider container */
+            max-width: 1280px;
+            /* Slightly wider container */
         }
+
         .section-title {
-            color: #1a202c; /* Darker title color */
-            border-bottom: 4px solid #34d399; /* Vibrant green underline */
+            color: #1a202c;
+            /* Darker title color */
+            border-bottom: 4px solid #34d399;
+            /* Vibrant green underline */
             padding-bottom: 0.85rem;
-            margin-bottom: 3rem; /* More space below title */
-            font-weight: 800; /* Extra bolder title */
-            letter-spacing: -0.03em; /* Slightly tighter letter spacing for impact */
+            margin-bottom: 3rem;
+            /* More space below title */
+            font-weight: 800;
+            /* Extra bolder title */
+            letter-spacing: -0.03em;
+            /* Slightly tighter letter spacing for impact */
         }
+
         .card {
             background-color: #ffffff;
-            border-radius: 1.25rem; /* Even more rounded corners */
-            box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.15), 0 6px 12px -4px rgba(0, 0, 0, 0.08); /* More elegant, diffused shadow */
-            padding: 2.5rem; /* Increased padding for spaciousness */
-            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation */
+            border-radius: 1.25rem;
+            /* Even more rounded corners */
+            box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.15), 0 6px 12px -4px rgba(0, 0, 0, 0.08);
+            /* More elegant, diffused shadow */
+            padding: 2.5rem;
+            /* Increased padding for spaciousness */
+            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            /* Smoother animation */
         }
+
         .card:hover {
-            transform: translateY(-10px); /* More pronounced lift on hover */
+            transform: translateY(-10px);
+            /* More pronounced lift on hover */
             box-shadow: 0 25px 40px -8px rgba(0, 0, 0, 0.2), 0 15px 20px -8px rgba(0, 0, 0, 0.08);
         }
+
         .link-style {
-            color: #34d399; /* Primary vibrant green for links */
+            color: #34d399;
+            /* Primary vibrant green for links */
             text-decoration: none;
             transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
         }
+
         .link-style:hover {
-            color: #10b981; /* Darker green on hover */
+            color: #10b981;
+            /* Darker green on hover */
             text-decoration: underline;
         }
+
         .skill-tag {
             display: inline-block;
-            background-color: #e0f2f7; /* Very light blue-green background for tags */
-            color: #065f46; /* Darker green text for tags */
+            background-color: #e0f2f7;
+            /* Very light blue-green background for tags */
+            color: #065f46;
+            /* Darker green text for tags */
             padding: 0.5rem 1rem;
-            border-radius: 9999px; /* Fully rounded pills */
-            font-size: 0.9rem; /* Slightly larger text */
+            border-radius: 9999px;
+            /* Fully rounded pills */
+            font-size: 0.9rem;
+            /* Slightly larger text */
             margin: 0.35rem;
-            font-weight: 600; /* Semibold */
+            font-weight: 600;
+            /* Semibold */
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         }
+
         .skill-tag:hover {
-            background-color: #a7f3d0; /* Slightly darker on hover */
+            background-color: #a7f3d0;
+            /* Slightly darker on hover */
             color: #047857;
         }
+
         .project-image {
             width: 100%;
-            height: 220px; /* Slightly increased height for project images */
-            object-fit: cover; /* Ensure image covers the area */
-            border-radius: 1rem; /* Match card border-radius */
+            height: 220px;
+            /* Fixed height for project images */
+            object-fit: cover;
+            /* Ensure image covers the area */
+            border-radius: 1rem;
+            /* Match card border-radius */
             margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for images */
         }
+
         .header-text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
+
 <body class="antialiased">
 
     <!-- Header Section -->
@@ -82,10 +120,10 @@
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <!-- Profile Picture -->
             <div class="mb-10 md:mb-0 md:mr-16 flex-shrink-0">
-                <img src="uploaded:497356561_672439852242226_3512137493214932199_n.jpg-359906c4-db9b-42e8-a1d5-36299cfbd5f6"
-                     onerror="this.onerror=null;this.src='https://placehold.co/200x200/34d399/ffffff?text=MINHAZUL';"
-                     alt="Minhazul Islam"
-                     class="w-52 h-52 rounded-full object-cover border-8 border-emerald-300 shadow-xl transform hover:scale-105 transition-transform duration-500 ease-in-out">
+                <img src="minhaz.jpg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/200x200/34d399/ffffff?text=MINHAZUL';"
+                    alt="Minhazul Islam"
+                    class="w-52 h-52 rounded-full object-cover border-8 border-emerald-300 shadow-xl transform hover:scale-105 transition-transform duration-500 ease-in-out">
             </div>
 
             <!-- Name and Contact Info -->
@@ -96,25 +134,31 @@
                     <a href="tel:+8615990259205" class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fas fa-phone-alt mr-3"></i> +86 15990259205
                     </a>
-                    <a href="mailto:minhaz249602@gmail.com" class="flex items-center link-style text-emerald-200 hover:text-white">
+                    <a href="mailto:minhaz249602@gmail.com"
+                        class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fas fa-envelope mr-3"></i> minhaz249602@gmail.com
                     </a>
-                    <a href="mailto:22351396@zju.cn" class="flex items-center link-style text-emerald-200 hover:text-white">
+                    <a href="mailto:22351396@zju.cn"
+                        class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fas fa-envelope mr-3"></i> 22351396@zju.cn
                     </a>
                     <span class="flex items-center text-emerald-200">
-                        <i class="fas fa-map-marker-alt mr-3"></i> Zhejiang University, Xuefu Rd, Yinzhou District, Zhejiang
+                        <i class="fas fa-map-marker-alt mr-3"></i> Zhejiang University, Xuefu Rd, Yinzhou District,
+                        Zhejiang
                     </span>
                 </div>
                 <div class="flex flex-wrap justify-center md:justify-start gap-x-10 gap-y-4 mt-6 text-lg">
-                    <a href="https://www.linkedin.com/in/minhazul-islam-43b3a4221/" target="_blank" class="flex items-center link-style text-emerald-200 hover:text-white">
+                    <a href="https://www.linkedin.com/in/minhazul-islam-43b3a4221/" target="_blank"
+                        class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fab fa-linkedin mr-3"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/Minhazul249602" target="_blank" class="flex items-center link-style text-emerald-200 hover:text-white">
+                    <a href="https://github.com/Minhazul249602" target="_blank"
+                        class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fab fa-github mr-3"></i> GitHub
                     </a>
                     <!-- Assuming R.png is a custom icon, using a placeholder or generic icon -->
-                    <a href="minhaz165" target="_blank" class="flex items-center link-style text-emerald-200 hover:text-white">
+                    <a href="minhaz165" target="_blank"
+                        class="flex items-center link-style text-emerald-200 hover:text-white">
                         <i class="fas fa-id-card mr-3"></i> minhaz165
                     </a>
                 </div>
@@ -130,7 +174,13 @@
             <h2 class="text-5xl section-title">Summary</h2>
             <div class="card">
                 <p class="text-gray-700 leading-relaxed text-xl text-justify">
-                    A versatile professional with a Bachelor's in Computer Science and a Master's in Industrial Design Engineering. My expertise spans coding, data analysis, and problem-solving, enabling me to manage complex datasets and systems effectively. I combine technical acumen with practical experience in product design, 3D modeling, and project management, offering a holistic understanding of product development and international trade. My hands-on projects and internships have honed my ability to integrate technology and design, making me uniquely equipped for roles in foreign trade that demand analytical, technical, and design skills for navigating global markets and product innovation.
+                    A versatile professional with a Bachelor's in Computer Science and a Master's in Industrial Design
+                    Engineering. My expertise spans coding, data analysis, and problem-solving, enabling me to manage
+                    complex datasets and systems effectively. I combine technical acumen with practical experience in
+                    product design, 3D modeling, and project management, offering a holistic understanding of product
+                    development and international trade. My hands-on projects and internships have honed my ability to
+                    integrate technology and design, making me uniquely equipped for roles in foreign trade that demand
+                    analytical, technical, and design skills for navigating global markets and product innovation.
                 </p>
             </div>
         </section>
@@ -162,13 +212,18 @@
                             <h3 class="text-3xl font-semibold text-gray-800">Piliving</h3>
                             <p class="text-emerald-600 font-medium text-xl">Product Manager, R&D</p>
                         </div>
-                        <p class="text-gray-600 text-lg sm:text-right mt-3 sm:mt-0">February 2024 - September 2024 | Ningbo, China</p>
+                        <p class="text-gray-600 text-lg sm:text-right mt-3 sm:mt-0">February 2024 - September 2024 |
+                            Ningbo, China</p>
                     </div>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
-                        <li>Conducted comprehensive market research to identify product opportunities and guide development decisions, ensuring market alignment.</li>
-                        <li>Designed innovative 3D product models using Autodesk Fusion 360, translating concepts into production-ready designs.</li>
-                        <li>Managed the end-to-end product development lifecycle, coordinating effectively with multiple suppliers for component manufacturing.</li>
-                        <li>Led cross-functional project teams, consistently ensuring timely delivery while upholding stringent quality standards.</li>
+                        <li>Conducted comprehensive market research to identify product opportunities and guide
+                            development decisions, ensuring market alignment.</li>
+                        <li>Designed innovative 3D product models using Autodesk Fusion 360, translating concepts into
+                            production-ready designs.</li>
+                        <li>Managed the end-to-end product development lifecycle, coordinating effectively with multiple
+                            suppliers for component manufacturing.</li>
+                        <li>Led cross-functional project teams, consistently ensuring timely delivery while upholding
+                            stringent quality standards.</li>
                     </ul>
                 </div>
                 <div class="card">
@@ -177,14 +232,20 @@
                             <h3 class="text-3xl font-semibold text-gray-800">ProFabx</h3>
                             <p class="text-emerald-600 font-medium text-xl">Software Engineer and 3D Designer</p>
                         </div>
-                        <p class="text-gray-600 text-lg sm:text-right mt-3 sm:mt-0">June 2024 - September 2024 | Ningbo, China</p>
+                        <p class="text-gray-600 text-lg sm:text-right mt-3 sm:mt-0">June 2024 - September 2024 | Ningbo,
+                            China</p>
                     </div>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
-                        <li>Developed advanced 3D models using Autodesk Fusion 360 and Inventor, successfully transitioning from manual design to automated workflows.</li>
-                        <li>Created robust Python scripts to automate complex 3D modeling processes through the Autodesk Inventor API.</li>
-                        <li>Designed an intuitive web interface using JavaScript that dynamically updates 3D models based on real-time parameter changes.</li>
-                        <li>Implemented a sophisticated parametric modeling system, ensuring dimension modifications automatically propagate throughout entire designs.</li>
-                        <li>Streamlined design processes by 40% through the strategic automation of repetitive modeling tasks, significantly boosting efficiency.</li>
+                        <li>Developed advanced 3D models using Autodesk Fusion 360 and Inventor, successfully
+                            transitioning from manual design to automated workflows.</li>
+                        <li>Created robust Python scripts to automate complex 3D modeling processes through the Autodesk
+                            Inventor API.</li>
+                        <li>Designed an intuitive web interface using JavaScript that dynamically updates 3D models
+                            based on real-time parameter changes.</li>
+                        <li>Implemented a sophisticated parametric modeling system, ensuring dimension modifications
+                            automatically propagate throughout entire designs.</li>
+                        <li>Streamlined design processes by 40% through the strategic automation of repetitive modeling
+                            tasks, significantly boosting efficiency.</li>
                     </ul>
                 </div>
             </div>
@@ -196,69 +257,100 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
                 <!-- SPROUT Project -->
                 <div class="card">
-                    <img src="https://placehold.co/600x220/34d399/ffffff?text=SPROUT+Project" alt="SPROUT Project" class="project-image">
-                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">SPROUT – Shape-changing Meditation Device for Academic Mindset Support</h3>
+                    <img src="SPROUT.png" alt="SPROUT Project"
+                        class="project-image">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">SPROUT – Shape-changing Meditation Device for
+                        Academic Mindset Support</h3>
                     <p class="text-gray-600 text-base mb-3">Oct 2024 – Dec 2024 | Zhejiang University</p>
-                    <p class="text-gray-700 text-lg mb-4">Tools: Arduino IDE/C++, Embedded Systems, Sensor Integration, Fusion 360</p>
+                    <p class="text-gray-700 text-lg mb-4">Tools: Arduino IDE/C++, Embedded Systems, Sensor Integration,
+                        Fusion 360</p>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-5">
-                        <li>Designed a bio-inspired, shape-changing interactive board to help students transform academic challenges into opportunities for growth.</li>
-                        <li>Addressed "<span class="text-emerald-600 font-semibold">Fear of Failure</span>" by developing a supportive non-intrusive intervention device for university environments.</li>
-                        <li>Integrated sensors and actuators with Arduino-based embedded systems to create a meditative interaction, fostering mindset reflection and improvement.</li>
-                        <li>Utilized the metaphor of "planting a seed" to symbolize the transformation of negative emotions into resilience and a growth mindset.</li>
-                        <li>Key skills: System Design, Embedded Systems, Circuit Prototyping, C++ Programming, Sensor Integration, Prototype Development.</li>
+                        <li>Designed a bio-inspired, shape-changing interactive board to help students transform
+                            academic challenges into opportunities for growth.</li>
+                        <li>Addressed "<span class="text-emerald-600 font-semibold">Fear of Failure</span>" by
+                            developing a supportive non-intrusive intervention device for university environments.</li>
+                        <li>Integrated sensors and actuators with Arduino-based embedded systems to create a meditative
+                            interaction, fostering mindset reflection and improvement.</li>
+                        <li>Utilized the metaphor of "planting a seed" to symbolize the transformation of negative
+                            emotions into resilience and a growth mindset.</li>
+                        <li>Key skills: System Design, Embedded Systems, Circuit Prototyping, C++ Programming, Sensor
+                            Integration, Prototype Development.</li>
                     </ul>
-                    <a href="https://minhazulzju.github.io/SPROUT/" target="_blank" class="link-style flex items-center text-xl font-medium">
+                    <a href="https://minhazulzju.github.io/SPROUT/" target="_blank"
+                        class="link-style flex items-center text-xl font-medium">
                         <i class="fab fa-github mr-3"></i> View on GitHub
                     </a>
                 </div>
 
                 <!-- Autodesk Inventor API Project -->
                 <div class="card">
-                    <img src="https://placehold.co/600x220/34d399/ffffff?text=CAD+Automation" alt="CAD Automation Project" class="project-image">
-                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">Autodesk Inventor API with Python – Parametric CAD Automation</h3>
+                    <img src="https://placehold.co/600x220/34d399/ffffff?text=CAD+Automation"
+                        alt="CAD Automation Project" class="project-image">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">Autodesk Inventor API with Python – Parametric
+                        CAD Automation</h3>
                     <p class="text-gray-600 text-base mb-3">Apr 2024 – Aug 2024</p>
                     <p class="text-gray-700 text-lg mb-4">Tools: Autodesk Inventor, Python, win32com.client</p>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-5">
-                        <li>Developed a robust parametric modeling system using Python to dynamically update Autodesk Inventor 3D models by modifying key dimensions.</li>
-                        <li>Automated repetitive CAD tasks, significantly reducing design time and minimizing manual errors in complex projects.</li>
-                        <li>Seamlessly integrated Python scripting with Inventor’s API to streamline mechanical design workflows and enhance prototyping efficiency.</li>
+                        <li>Developed a robust parametric modeling system using Python to dynamically update Autodesk
+                            Inventor 3D models by modifying key dimensions.</li>
+                        <li>Automated repetitive CAD tasks, significantly reducing design time and minimizing manual
+                            errors in complex projects.</li>
+                        <li>Seamlessly integrated Python scripting with Inventor’s API to streamline mechanical design
+                            workflows and enhance prototyping efficiency.</li>
                     </ul>
                     <!-- Note: The provided link in the CV for this project points to the Product Recommendation System. Please verify and update if needed. -->
-                    <a href="https://github.com/Minhazul249602/Product-Recommendation-System-Based-on-collaborative-algorithm" target="_blank" class="link-style flex items-center text-xl font-medium">
+                    <a href="https://github.com/Minhazul249602/Product-Recommendation-System-Based-on-collaborative-algorithm"
+                        target="_blank" class="link-style flex items-center text-xl font-medium">
                         <i class="fab fa-github mr-3"></i> View on GitHub
                     </a>
                 </div>
 
                 <!-- InclusiveVision Project -->
                 <div class="card">
-                    <img src="https://placehold.co/600x220/34d399/ffffff?text=Smart+Glasses" alt="Smart Glasses Project" class="project-image">
-                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">InclusiveVision - Smart Glasses for Visually Impaired Individuals</h3>
+                    <img src="https://placehold.co/600x220/34d399/ffffff?text=Smart+Glasses" alt="Smart Glasses Project"
+                        class="project-image">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">InclusiveVision - Smart Glasses for Visually
+                        Impaired Individuals</h3>
                     <p class="text-gray-600 text-base mb-3">December 2023</p>
-                    <p class="text-gray-700 text-lg mb-4">Tools: Arduino UNO, Ultrasonic Sensors, Fusion 360, Flashforge 3D Printing, Talkie Library, AutoCAD, Laser Cutting</p>
+                    <p class="text-gray-700 text-lg mb-4">Tools: Arduino UNO, Ultrasonic Sensors, Fusion 360, Flashforge
+                        3D Printing, Talkie Library, AutoCAD, Laser Cutting</p>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-5">
-                        <li>Developed a functional prototype of smart glasses using Arduino UNO and ultrasonic sensors, achieving real-time obstacle detection with high accuracy.</li>
-                        <li>Implemented an effective voice alert system using the Talkie library, providing immediate auditory feedback based on sensor data.</li>
-                        <li>Created optimized 3D models of the glasses frame using Fusion 360, prioritizing comfort and functionality for a wearable form factor.</li>
-                        <li>Designed an integrated component with multiple ultrasonic sensors for easy assembly and seamless compatibility with existing assistive technologies, enhancing user independence and safety.</li>
+                        <li>Developed a functional prototype of smart glasses using Arduino UNO and ultrasonic sensors,
+                            achieving real-time obstacle detection with high accuracy.</li>
+                        <li>Implemented an effective voice alert system using the Talkie library, providing immediate
+                            auditory feedback based on sensor data.</li>
+                        <li>Created optimized 3D models of the glasses frame using Fusion 360, prioritizing comfort and
+                            functionality for a wearable form factor.</li>
+                        <li>Designed an integrated component with multiple ultrasonic sensors for easy assembly and
+                            seamless compatibility with existing assistive technologies, enhancing user independence and
+                            safety.</li>
                     </ul>
-                    <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/FINALPROJECT/final" target="_blank" class="link-style flex items-center text-xl font-medium">
+                    <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/FINALPROJECT/final"
+                        target="_blank" class="link-style flex items-center text-xl font-medium">
                         <i class="fab fa-github mr-3"></i> View on GitHub
                     </a>
                 </div>
 
                 <!-- Product Recommendation System Project -->
                 <div class="card">
-                    <img src="https://placehold.co/600x220/34d399/ffffff?text=Recommendation+System" alt="Recommendation System Project" class="project-image">
-                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">Product recommendation system based on Collaborative Filtering Algorithm</h3>
+                    <img src="https://placehold.co/600x220/34d399/ffffff?text=Recommendation+System"
+                        alt="Recommendation System Project" class="project-image">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">Product recommendation system based on
+                        Collaborative Filtering Algorithm</h3>
                     <p class="text-gray-600 text-base mb-3">2022 - 2023</p>
                     <p class="text-gray-700 text-lg mb-4">Tools: Python, NumPy, Pandas, MongoDB, Matplotlib, Flask</p>
                     <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-5">
-                        <li>Developed a collaborative filtering strategy for the goodbooks-10k dataset to generate high-quality recommendations based on user purchase and rating history.</li>
-                        <li>Utilized Python with NumPy, Pandas, and Matplotlib for comprehensive data analysis and visualization, leading to accurate and insightful recommendations.</li>
-                        <li>Created a personalized recommendation model based on matrix factorization, ensuring tailored suggestions for users.</li>
-                        <li>Applied Euclidean Distance for similarity analysis between books, significantly enhancing the accuracy of book recommendations.</li>
+                        <li>Developed a collaborative filtering strategy for the goodbooks-10k dataset to generate
+                            high-quality recommendations based on user purchase and rating history.</li>
+                        <li>Utilized Python with NumPy, Pandas, and Matplotlib for comprehensive data analysis and
+                            visualization, leading to accurate and insightful recommendations.</li>
+                        <li>Created a personalized recommendation model based on matrix factorization, ensuring tailored
+                            suggestions for users.</li>
+                        <li>Applied Euclidean Distance for similarity analysis between books, significantly enhancing
+                            the accuracy of book recommendations.</li>
                     </ul>
-                    <a href="https://github.com/Minhazul249602/Product-Recommendation-System-Based-on-collaborative-algorithm" target="_blank" class="link-style flex items-center text-xl font-medium">
+                    <a href="https://github.com/Minhazul249602/Product-Recommendation-System-Based-on-collaborative-algorithm"
+                        target="_blank" class="link-style flex items-center text-xl font-medium">
                         <i class="fab fa-github mr-3"></i> View on GitHub
                     </a>
                 </div>
@@ -271,10 +363,16 @@
             <div class="card">
                 <ul class="list-decimal list-inside text-gray-700 text-lg space-y-4">
                     <li>
-                        Minhazul Islam, Mengru Xue, and Tasnim Afra (2025). <strong>Exploring Psychologist-Applied Biomarkers in Bipolar Disorder: A Systematic Framework</strong>. In <em>Proceedings of the 24th IFIP International Conference on Entertainment Computing (ICEC 2025)</em>, August 27–30, Tokyo, Japan.
+                        Minhazul Islam, Mengru Xue, and Tasnim Afra (2025). <strong>Exploring Psychologist-Applied
+                            Biomarkers in Bipolar Disorder: A Systematic Framework</strong>. In <em>Proceedings of the
+                            24th IFIP International Conference on Entertainment Computing (ICEC 2025)</em>, August
+                        27–30, Tokyo, Japan.
                     </li>
                     <li>
-                        Tasnim Afra, Mengru Xue, and Minhazul Islam (2025). <strong>Enhancing Biofeedback Interventions for Depression and Anxiety through Entertainment Computing: A Systematic Review</strong>. In <em>Proceedings of the 24th IFIP International Conference on Entertainment Computing (ICEC 2025)</em>, August 27–30, Tokyo, Japan.
+                        Tasnim Afra, Mengru Xue, and Minhazul Islam (2025). <strong>Enhancing Biofeedback Interventions
+                            for Depression and Anxiety through Entertainment Computing: A Systematic Review</strong>. In
+                        <em>Proceedings of the 24th IFIP International Conference on Entertainment Computing (ICEC
+                            2025)</em>, August 27–30, Tokyo, Japan.
                     </li>
                 </ul>
             </div>
@@ -288,10 +386,14 @@
                 <p class="text-emerald-600 font-medium text-xl">Global Youth Talent Program</p>
                 <p class="text-gray-600 text-lg mb-4">Selected Participant | 2023</p>
                 <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
-                    <li>Selected among top young designers worldwide for this prestigious UN program, recognizing innovative talent.</li>
-                    <li>Recognized for developing innovative 3D design and engineering solutions with real-world applicability.</li>
-                    <li>Actively participated in a specialized curriculum bridging advanced design principles with sustainable development goals.</li>
-                    <li>The program's impact and my participation were prominently featured on the official UN Technology Bank website.</li>
+                    <li>Selected among top young designers worldwide for this prestigious UN program, recognizing
+                        innovative talent.</li>
+                    <li>Recognized for developing innovative 3D design and engineering solutions with real-world
+                        applicability.</li>
+                    <li>Actively participated in a specialized curriculum bridging advanced design principles with
+                        sustainable development goals.</li>
+                    <li>The program's impact and my participation were prominently featured on the official UN
+                        Technology Bank website.</li>
                 </ul>
             </div>
         </section>
@@ -356,15 +458,18 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <h4 class="font-semibold text-gray-800 mb-3 text-2xl">3D Model:</h4>
-                        <a href="https://minhazul249602.github.io/3D-Model/" target="_blank" class="link-style text-lg">Fusion 360</a>
+                        <a href="https://minhazul249602.github.io/3D-Model/" target="_blank"
+                            class="link-style text-lg">Fusion 360</a>
                     </div>
                     <div>
                         <h4 class="font-semibold text-gray-800 mb-3 text-2xl">IoT:</h4>
-                        <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/PM/IOT/test" target="_blank" class="link-style text-lg">IoT Project</a>
+                        <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/PM/IOT/test"
+                            target="_blank" class="link-style text-lg">IoT Project</a>
                     </div>
                     <div>
                         <h4 class="font-semibold text-gray-800 mb-3 text-2xl">Arduino:</h4>
-                        <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/PM/AD/arduino" target="_blank" class="link-style text-lg">Arduino Project</a>
+                        <a href="https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/#/PM/AD/arduino"
+                            target="_blank" class="link-style text-lg">Arduino Project</a>
                     </div>
                 </div>
             </div>
@@ -377,16 +482,22 @@
         <div class="container mx-auto text-base">
             <p class="mb-4">&copy; 2025 Minhazul Islam. All rights reserved.</p>
             <div class="flex justify-center gap-8 mt-3">
-                <a href="https://www.linkedin.com/in/minhazul-islam-43b3a4221/" target="_blank" class="text-emerald-300 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/Minhazul249602" target="_blank" class="text-emerald-300 hover:text-white transition-colors duration-300"><i class="fab fa-github fa-2x"></i></a>
-                <a href="mailto:minhaz249602@gmail.com" class="text-emerald-300 hover:text-white transition-colors duration-300"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/minhazul-islam-43b3a4221/" target="_blank"
+                    class="text-emerald-300 hover:text-white transition-colors duration-300"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Minhazul249602" target="_blank"
+                    class="text-emerald-300 hover:text-white transition-colors duration-300"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:minhaz249602@gmail.com"
+                    class="text-emerald-300 hover:text-white transition-colors duration-300"><i
+                        class="fas fa-envelope fa-2x"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
         // Function to set the profile picture once the page loads
-        window.onload = function() {
+        window.onload = function () {
             // The image source is already set in the HTML with a placeholder.
             // If you host your image online, replace the `src` attribute in the HTML directly.
             // Example: <img src="YOUR_IMAGE_URL_HERE" ...>
@@ -395,4 +506,5 @@
     </script>
 
 </body>
+
 </html>
