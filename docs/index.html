@@ -261,6 +261,30 @@
         <section id="projects" class="mb-20">
             <h2 class="text-5xl section-title">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- BepsBot Project -->
+                <div class="card">
+                    <div style="display:flex;justify-content:center;align-items:center;background:#fff;border-radius:50%;border:2px solid #e5e7eb;box-shadow:0 6px 18px rgba(52,211,153,0.10);height:180px;width:180px;margin:0 auto 2rem auto;overflow:hidden;">
+                        <img src="bepsbot.png" alt="BepsBot Chatbot Logo" style="height:100%;width:100%;object-fit:cover;filter:drop-shadow(0 2px 8px rgba(52,211,153,0.15));border-radius:50%;background:#fff;" onerror="this.src='https://placehold.co/180x180/34d399/ffffff?text=BepsBot';">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-3">BepsBot – AI-Powered Mental Health Peer Support Platform</h3>
+                    <p class="text-gray-600 text-base mb-3">2025 | Zhejiang University</p>
+                    <p class="text-gray-700 text-lg mb-4">Tools: Python, Flask, FastAPI, PyTorch, RoBERTa, LangChain, DeepSeek LLM, Sentence Transformers, ChromaDB, RAG, Pushshift API, ThreadPoolExecutor</p>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-5">
+                        <li>Developed a fully functional web-based prototype as an intelligent writing assistant for peer supporters, providing real-time feedback on Emotional Support (ES) and Informational Support (IS) levels and using Generative AI to suggest context-aware improvements for safer, more empathetic replies.</li>
+                        <li>Designed and deployed a scalable microservice architecture, integrating a large language model (LLM), retrieval augmentation generation (RAG), and a Transformer-based regression model.</li>
+                        <li>Built a robust data pipeline to crawl and preprocess mental health discussions from Reddit over the past six years. Led a rigorous annotation effort with three domain experts to annotate IS/ES metrics, creating a high-quality gold-standard dataset for supervised learning.</li>
+                        <li>Experimented with SVM, Multinomial Logistic Regression, Random Forest (RF), and XGBoost to predict support metrics, achieving the best results for IS with RF and for ES with XGBoost.</li>
+                        <li>Fine-tuned the RoBERTa model on the expert-annotated dataset to predict support quality scores highly correlated with human judgment.</li>
+                        <li>Built a RAG system using LangChain, ChromaDB, and SentenceTransformers, retrieving semantically similar, high-quality human responses to ground the DeepSeek LLM, reducing hallucinations and improving generated suggestions.</li>
+                        <li>Deployed models via a high-concurrency FastAPI inference service, decoupled from the Flask frontend, optimizing inference latency by ~65% through asynchronous request processing and parallel execution of LLM generation and security checks (using ThreadPoolExecutor).</li>
+                        <li>Developed a real-time security filtering middleware using LLM to detect and block harmful content, self-harm risks, and dangerous medical suggestions, ensuring strict adherence to ethical guidelines for mental health applications.</li>
+                        <li>Implemented an automated active learning pipeline that filters, pseudo-labels, and incorporates new user submissions into the training set, enabling the model to adapt and improve over time without human intervention.</li>
+                    </ul>
+                    <a href="https://minhazulzju.github.io/BepsBot/" target="_blank" class="link-style flex items-center text-xl font-medium">
+                        <img src="bepsbot.png" alt="BepsBot Logo" class="w-8 h-8 mr-3 rounded-full object-cover" style="box-shadow: 0 2px 6px rgba(52,211,153,0.2);"> Visit BepsBot
+                    </a>
+                </div>
+
                 <!-- SPROUT Project -->
                 <div class="card">
                     <img src="SPROUT.png" alt="SPROUT Project" class="project-media">
@@ -286,7 +310,6 @@
                         <i class="fab fa-github mr-3"></i> Exploring SPROUT Project
                     </a>
                 </div>
-
                 <!-- Autodesk Inventor API Project -->
                 <div class="card">
                     <img src="api.gif" id="api-gif"
